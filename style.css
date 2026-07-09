@@ -108,7 +108,7 @@ section{
 
 .about-img{
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     border-radius: 50%;
 }
 
@@ -169,6 +169,69 @@ section{
 
 .socials i:hover{
     transform: scale(1.1);
+}
+
+/* technology i know */
+
+.technology-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+}
+
+.tech-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.tech-card:hover {
+background-color: black;
+color: white;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.tech-card:hover span{
+    color: white;
+}
+
+.tech-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #8e2de2);
+  border-radius: 20px;
+}
+
+.tech-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 12px;
+  color: #333;
 }
 
 
@@ -295,4 +358,45 @@ section{
     font-weight: 400;
     line-height: 1.5rem;
     text-align: justify;
+}
+
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #8e2de2;
+  transform: translateY(-3px);
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #777;
 }
